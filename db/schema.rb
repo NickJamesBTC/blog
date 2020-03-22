@@ -10,9 +10,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 0) do
-=======
 ActiveRecord::Schema.define(version: 2020_03_21_154451) do
 
   create_table "articles", force: :cascade do |t|
@@ -21,6 +18,5 @@ ActiveRecord::Schema.define(version: 2020_03_21_154451) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
->>>>>>> d8a9df6... Created Articles
 
 end
