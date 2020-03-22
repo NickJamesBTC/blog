@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <h1>Showtime!</h1>
   </head>
   <body>
-    <p>
-      <strong>Title:</strong>
-      <%= @article.title %>
-    </p>
-    <p>
-    <%= @article.text %>
-    </p>
+    <h3>Stories</h3>
+    <table>
+      <col width="120">
+      <colgroup>
+        <col span="2">
+      </colgroup>
+      <tr>
+        <td><strong>Article</strong></td>
+        <td><strong>Content</strong></td>
+      </tr>
+      <tr>
+        <td><%= @article.title %></td>
+        <td><%= @article.text %></td>
+      </tr>
+    </table><br>
+    <%= link_to 'Articles', articles_path %>
   </body>
 </html>
